@@ -3,11 +3,19 @@
 const fruits = ["banana", "pinapple", "grape", "orange", "apple"];
 const out = [];
 
-for (let i = 0; i < fruits.length; i++) {
-  console.log("a");
+let isSorted;
+while (!isSorted) {
+  isSorted = true;
+  for (let i = 0; i < fruits.length; i++) {
+    if (fruits[i] > fruits[i + 1]) {
+      isSorted = false;
+      let storeVal = fruits[i];
+      fruits[i] = fruits[i + 1];
+      fruits[i + 1] = storeVal;
+    }
+  }
 }
-
-console.log(out);
+console.log(fruits);
 
 // 3 - sortowanie wg model A -> Z
 // 4 - sortowanie wg id 0 -> infinity
