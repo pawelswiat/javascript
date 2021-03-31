@@ -41,11 +41,9 @@ const cars = [
 */
 let out = {};
 for (let i = 0; i < cars.length; i++) {
-  out[cars[i].id] = [];
-  out[cars[i].id].push({
-    model: cars[i].model,  
-    marka: cars[i].marka
-  })
+  out[cars[i].id] = {};
+  out[cars[i].id]["model"] = cars[i].model;
+  out[cars[i].id]["marka"] = cars[i].marka;
 }
 
 console.log(out);
