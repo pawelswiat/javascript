@@ -39,5 +39,13 @@ const cars = [
   ....
 }
 */
+let out = {};
+for (let i = 0; i < cars.length; i++) {
+  out[cars[i].id] = [];
+  out[cars[i].id].push({
+    model: cars[i].model,  
+    marka: cars[i].marka
+  })
+}
 
-const out2 = {};
+console.log(out);
