@@ -55,5 +55,15 @@ const cars = [
   ....
 }
 */
+let output = {};
+for (let i = 0; i < cars.length; i++) {
+  
+  if(!output[cars[i].marka]) {
+    output[cars[i].marka] = [];
+    output[cars[i].marka].push(cars[i]);
+  } else {
+    output[cars[i].marka].push(cars[i]);
+  }
 
-const out2 = {};
+}
+console.log(output);
