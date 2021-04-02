@@ -109,9 +109,9 @@ const cars = {
 };
 
 let out = [];
-for (let car in cars) {
-  for (let i = 0; i < cars[car].length; i++) {
-    out.push(cars[car][i]);
-  }
+for (let car in cars) {   
+  for (const eachCar of cars[car]) {
+    out.push(eachCar);
+  }  
 }
 console.log(out);
