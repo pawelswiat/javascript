@@ -55,56 +55,63 @@
   ....
 // }
 // */
-// let output = {};
-// for (let i = 0; i < cars.length; i++) {
-  
-//   if(!output[cars[i].marka]) {
-//     output[cars[i].marka] = [];
-//   } 
-//     output[cars[i].marka].push(cars[i]);
+// let out = {};
+// for (const car of cars) {
+
+//   if (!out[car.marka]) {
+//   	out[car.marka] = [];
+//   }
+//   out[car.marka].push(car);
 // }
-// console.log(output);
+// console.log(out)
 
-
-// 2. odwrotna  agregacja 
-
-
+// 2. odwrotna  agregacja
 
 const cars = {
-  bmw: [{
-    id: "21",
-    marka: "bmw",
-    model: "m3"
-}],
-  fiat: [{
-  id: "213",
-  marka: "fiat",
-  model: "punto"
-}, {
-  id: "533",
-  marka: "fiat",
-  model: "uno"
-}],
-  kia: [{
-  id: "1",
-  marka: "kia",
-  model: "ceed"
-}],
-  lynx: [{
-  id: "5",
-  marka: "lynx",
-  model: "lynx-car"
-}, {
-  id: "6",
-  marka: "lynx",
-  model: "lynx-kombajn"
-}]
-}
+  bmw: [
+    {
+      id: "21",
+      marka: "bmw",
+      model: "m3"
+    }
+  ],
+  fiat: [
+    {
+      id: "213",
+      marka: "fiat",
+      model: "punto"
+    },
+    {
+      id: "533",
+      marka: "fiat",
+      model: "uno"
+    }
+  ],
+  kia: [
+    {
+      id: "1",
+      marka: "kia",
+      model: "ceed"
+    }
+  ],
+  lynx: [
+    {
+      id: "5",
+      marka: "lynx",
+      model: "lynx-car"
+    },
+    {
+      id: "6",
+      marka: "lynx",
+      model: "lynx-kombajn"
+    }
+  ]
+};
 
-let out = []
+let out = [];
 for (let car in cars) {
-	for (let i = 0; i < cars[car].length; i++) {
-  	out.push(cars[car][i]);
+  for (let i = 0; i < cars[car].length; i++) {
+    out.push(cars[car][i]);
   }
-} 
+}
 console.log(out);

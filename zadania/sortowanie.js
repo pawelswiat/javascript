@@ -3,38 +3,36 @@
 const fruits = ["banana", "pinapple", "grape", "orange", "apple"];
 const out = [];
 //1 - sortowanie wg nazwy A -> Z
-// let isSorted;
+// let isSorted = false;
 // while (!isSorted) {
-//   isSorted = true;
-//   for (let i = 0; i < fruits.length; i++) {
-//     if (fruits[i] > fruits[i + 1]) {
-//       isSorted = false;
-//       let storeVal = fruits[i];
-//       fruits[i] = fruits[i + 1];
-//       fruits[i + 1] = storeVal;
+// 	isSorted = true;
+//   for (const [index, value] of fruits.entries()) {
+//   	if (fruits[index] > fruits[index + 1]) {
+//     	isSorted = false;
+//       let storeValue = fruits[index];
+//       fruits[index] = fruits[index + 1];
+//       fruits[index + 1] = storeValue;
 //     }
 //   }
 // }
+
 // console.log(fruits);
 
-
-// 2 - sortowanie wg nazwy Z -> A
-
-// let isSorted;
+// // 2 - sortowanie wg nazwy Z -> A
+// let isSorted = false;
 // while (!isSorted) {
-//   isSorted = true;
-//   for (let i = 0; i < fruits.length; i++) {
-//     if (fruits[i] < fruits[i + 1]) {
-//       isSorted = false;
-//       let storeVal = fruits[i];
-//       fruits[i] = fruits[i + 1];
-//       fruits[i + 1] = storeVal;
+// 	isSorted = true;
+//   for (const [index, value] of fruits.entries()) {
+//   	if (fruits[index] < fruits[index + 1]) {
+//     	isSorted = false;
+//       let storeValue = fruits[index];
+//       fruits[index] = fruits[index + 1];
+//       fruits[index + 1] = storeValue;
 //     }
 //   }
 // }
+
 // console.log(fruits);
-
-
 
 const cars = [
   {
@@ -63,37 +61,35 @@ const cars = [
 
 // let isSorted;
 // while(!isSorted) {
-// 	isSorted = true;
-//   for (let i = 0; i < cars.length; i++) {
-//     if (i < cars.length-1) {
-//       if (cars[i].model > cars[i + 1].model) {
-//       	isSorted = false;
-//         let storeVal = cars[i];
-//         cars[i] = cars[i + 1];
-//         cars[i + 1] = storeVal;
+//   isSorted = true;
+//   for (const [index, car] of cars.entries()) {   
+//     if (cars[index + 1]) {
+//       if (cars[index].model > cars[index + 1].model) {
+//         isSorted = false;
+//         let storeVal = cars[index];
+//         cars[index] = cars[index + 1];
+//         cars[index + 1] = storeVal;
 //       }   
-//     }   
+//     }     
 //   }
 // }
 // console.log(cars);
 
-//console.log(out);
 
 // 4 - sortowanie obiektów wg id 0 -> infinity
 
-
 // let isSorted;
 // while(!isSorted) {
-// 	isSorted = true;
-//   for (let i = 0; i < cars.length; i++) {
-//     if (i < cars.length-1) {
-//       if (cars[i].id > cars[i + 1].id) {
-//       	isSorted = false;
-//         let storeVal = cars[i];
-//         cars[i] = cars[i + 1];
-//         cars[i + 1] = storeVal;
+//   isSorted = true;
+//   for (const [index, car] of cars.entries()) {   
+//     if (cars[index + 1]) {
+//       if (cars[index].id > cars[index + 1].id) {
+//         isSorted = false;
+//         let storeVal = cars[index];
+//         cars[index] = cars[index + 1];
+//         cars[index + 1] = storeVal;
 //       }   
-//     }   
+//     }     
 //   }
 // }
 // console.log(cars);

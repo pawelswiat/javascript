@@ -37,13 +37,15 @@ const cars = [
     marka: "fiat",
   },
   ....
-}
+} 
 */
-let out = {};
-for (let i = 0; i < cars.length; i++) {
-  out[cars[i].id] = {};
-  out[cars[i].id]["model"] = cars[i].model;
-  out[cars[i].id]["marka"] = cars[i].marka;
+let output = {};
+
+for (const car of cars) {
+	output[car.id] = {
+  	model: car.model,
+    marka: car.marka
+  };
 }
 
-console.log(out);
+console.log(output);
