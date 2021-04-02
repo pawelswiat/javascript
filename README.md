@@ -1,3 +1,3 @@
-# js-ljdyab
+# javas
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-ljdyab)
