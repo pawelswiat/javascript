@@ -3,36 +3,41 @@
 const fruits = ["banana", "pinapple", "grape", "orange", "apple"];
 const out = [];
 //1 - sortowanie wg nazwy A -> Z
-// let isSorted = false;
-// while (!isSorted) {
-// 	isSorted = true;
-//   for (const [index, value] of fruits.entries()) {
-//   	if (fruits[index] > fruits[index + 1]) {
-//     	isSorted = false;
-//       let storeValue = fruits[index];
-//       fruits[index] = fruits[index + 1];
-//       fruits[index + 1] = storeValue;
-//     }
+// const sortFunction = (passedArray) => {
+// 	let output = passedArray;
+//   let isSorted = false;
+//    while (!isSorted) {
+//      isSorted = true;
+//      for (const[index, value] of output.entries()) {
+//         if (output[index] > output[index + 1]) {
+//           isSorted = false;
+//           let storeVal = output[index];
+//          output[index] = output[index + 1];
+//          output[index + 1] = storeVal;
+//         }
+//      }
 //   }
+// 	return output;
 // }
+// console.log(sortFunction(arr2));
 
-// console.log(fruits);
-
-// // 2 - sortowanie wg nazwy Z -> A
-// let isSorted = false;
-// while (!isSorted) {
-// 	isSorted = true;
-//   for (const [index, value] of fruits.entries()) {
-//   	if (fruits[index] < fruits[index + 1]) {
-//     	isSorted = false;
-//       let storeValue = fruits[index];
-//       fruits[index] = fruits[index + 1];
-//       fruits[index + 1] = storeValue;
-//     }
+// const sortFunction = (passedArray) => {
+// 	let output = passedArray;
+//   let isSorted = false;
+//    while (!isSorted) {
+//      isSorted = true;
+//      for (const[index, value] of output.entries()) {
+//         if (output[index] < output[index + 1]) {
+//           isSorted = false;
+//           let storeVal = output[index];
+//          output[index] = output[index + 1];
+//          output[index + 1] = storeVal;
+//         }
+//      }
 //   }
+// 	return output;
 // }
-
-// console.log(fruits);
+// console.log(sortFunction(arr2));
 
 const cars = [
   {
@@ -78,18 +83,23 @@ const cars = [
 
 // 4 - sortowanie obiektów wg id 0 -> infinity
 
-// let isSorted;
-// while(!isSorted) {
-//   isSorted = true;
-//   for (const [index, car] of cars.entries()) {   
-//     if (cars[index + 1]) {
-//       if (cars[index].id > cars[index + 1].id) {
-//         isSorted = false;
-//         let storeVal = cars[index];
-//         cars[index] = cars[index + 1];
-//         cars[index + 1] = storeVal;
-//       }   
-//     }     
+// const sortArray = (passedArray) => {
+// 	let output = passedArray;
+//   let isSorted = false;
+//   while (!isSorted) {
+//   	isSorted = true;
+//     for (const [index, item] of passedArray.entries()) {
+//     	if (output[index + 1]) {
+//       	if (output[index].id > output[index + 1].id) {
+// 				isSorted = false;
+//         let storeValue = output[index];
+//         output[index] = output[index + 1];
+//         output[index + 1] = storeValue;
+//      		}
+//       }
+//     }
 //   }
+//   return output;
 // }
-// console.log(cars);
+
+// console.log(sortArray(cars));
