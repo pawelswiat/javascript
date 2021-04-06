@@ -39,13 +39,13 @@ const cars = [
   ....
 } 
 */
-let output = {};
-
-for (const car of cars) {
-	output[car.id] = {
-  	model: car.model,
-    marka: car.marka
-  };
+const transformToAssociative = (passedArray) => {
+	let output = {};
+  for (arrayItem of passedArray) {
+  	output[arrayItem.id] = {
+    	model: arrayItem.model,
+      marka: arrayItem.marka
+    }	
+  } return output;
 }
-
-console.log(output);
+console.log(transformToAssociative(cars));

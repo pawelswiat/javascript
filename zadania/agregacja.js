@@ -108,10 +108,13 @@ const cars = {
   ]
 };
 
-let out = [];
-for (let car in cars) {   
-  for (const eachCar of cars[car]) {
-    out.push(eachCar);
-  }  
+const reverseAggregation = (passedObject) => {
+    let output = [];
+  for (eachObject in passedObject) {
+      for (eachArray of passedObject[eachObject]) {
+    }
+  }
+  return output;
 }
-console.log(out);
+
+console.log(reverseAggregation(cars));
