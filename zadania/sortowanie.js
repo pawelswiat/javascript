@@ -64,21 +64,26 @@ const cars = [
 
 // 3 - sortowanie wg model A -> Z
 
-// let isSorted;
-// while(!isSorted) {
-//   isSorted = true;
-//   for (const [index, car] of cars.entries()) {   
-//     if (cars[index + 1]) {
-//       if (cars[index].model > cars[index + 1].model) {
-//         isSorted = false;
-//         let storeVal = cars[index];
-//         cars[index] = cars[index + 1];
-//         cars[index + 1] = storeVal;
-//       }   
-//     }     
+// const sortArray = (passedArray) => {
+//   let output = passedArray;
+//   let isSorted = false;
+//   while (!isSorted) {
+//     isSorted = true;
+//     for (const [index, item] of passedArray.entries()) {
+//       if (output[index + 1]) {
+//         if (output[index].model > output[index + 1].model) {
+//           isSorted = false;
+//           let storeValue = output[index];
+//           output[index] = output[index + 1];
+//           output[index + 1] = storeValue;
+//         }
+//       }
+//     }
 //   }
+//   return output;
 // }
-// console.log(cars);
+
+// console.log(sortArray(cars));
 
 
 // 4 - sortowanie obiektów wg id 0 -> infinity
