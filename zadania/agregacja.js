@@ -54,16 +54,18 @@
   ]
   ....
 // }
-// */
-// let out = {};
-// for (const car of cars) {
+const aggregationByMark = (passedArray) => {
+    let output = {};
+  for (arrayItem of passedArray) {
+      if (!output[arrayItem.marka]) {
+        output[arrayItem.marka] = [];
+    }
+    output[arrayItem.marka].push(arrayItem);
+  }
+  return output;
+}
 
-//   if (!out[car.marka]) {
-//   	out[car.marka] = [];
-//   }
-//   out[car.marka].push(car);
-// }
-// console.log(out)
+console.log(aggregationByMark(cars));
 
 // 2. odwrotna  agregacja
 
